@@ -62,8 +62,8 @@ UserDetails.propTypes = {
 UserDetails.defaultProps = {
   userDetails: {
     name: "Oluwaleke Ojo",
-    avatar: require("../../images/avatars/james.jpg"),
-    jobTitle: "Account Officer",
+    avatar: require("../../images/user-icon.jpg"),
+    jobTitle: "Software Engineer",
     performanceReportTitle: "Workload",
     performanceReportValue: 74,
     metaTitle: "Description",
