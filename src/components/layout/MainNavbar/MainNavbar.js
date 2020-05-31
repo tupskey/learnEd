@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import NavBarNav from "../MainNavbar/NavbarNav/NavbarNav";
-
+import LearningOverview from "../../../views/LearningOverview";
 
 const MainNavbar = ({stickyTop }) => {
   const classes = classNames(
@@ -14,6 +14,7 @@ const MainNavbar = ({stickyTop }) => {
   return (
     <div className={classes}>
         <NavBarNav /> 
+        <LearningOverview />
     </div>
   );
 };

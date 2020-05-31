@@ -66,8 +66,9 @@ export default class NavbarNav extends React.Component {
           <Nav navbar className="m-auto">
           <UserActions />
           </Nav>
-        
+       
       </Navbar>
+    
     );
   }
 }

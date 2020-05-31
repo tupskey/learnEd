@@ -5,11 +5,9 @@ import { Redirect } from "react-router-dom";
 import { DefaultLayout } from "../src/layouts";
 
 // Route Views
-//import NavbarNav from "./components/layout/MainNavbar/NavbarNav/NavbarNav";
-//import UserActions from "./components/layout/MainNavbar/NavbarNav/UserActions";
-//import TransactionOverview from "../src/views/TransactionOverview";
-import UserProfile from "../src/views/UserProfile";
+import LearningOverview from "../src/views/LearningOverview";
 import MainNavBar from "../src/components/layout/MainNavbar/MainNavbar";
+import UserProfile from "../src/views/UserProfile";
 
 
 
@@ -18,13 +16,19 @@ export default [
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/MainNavBar" />,
+    component: () => <Redirect to="/learning-overview" />,
   },
   {
-    path: "/MainNavBar",
+    path: "/learning-overview",
+    layout: DefaultLayout,
+    component: LearningOverview,
+  },
+  {
+    path: "/main-navBar",
     layout: DefaultLayout,
     component: MainNavBar,
   },
+
   {
     path: "/user-profile",
     layout: DefaultLayout,
