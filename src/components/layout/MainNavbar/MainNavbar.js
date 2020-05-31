@@ -3,18 +3,20 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import NavBarNav from "../MainNavbar/NavbarNav/NavbarNav";
 import LearningOverview from "../../../views/LearningOverview";
+import Dashboard from "../Dashboard";
 
 const MainNavbar = ({stickyTop }) => {
   const classes = classNames(
     "main-navbar",
-    "bg-white",
+    "bg-black",
     stickyTop && "sticky-top"
   );
 
   return (
     <div className={classes}>
-        <NavBarNav /> 
-        <LearningOverview />
+      <NavBarNav />
+      <Dashboard />
+      <LearningOverview />
     </div>
   );
 };

@@ -63,11 +63,7 @@ UserDetails.defaultProps = {
   userDetails: {
     name: "Oluwaleke Ojo",
     avatar: require("../../images/user-icon.jpg"),
-<<<<<<< HEAD
-    jobTitle: "Account Officer",
-=======
     jobTitle: "Software Engineer",
->>>>>>> user-profile
     performanceReportTitle: "Workload",
     performanceReportValue: 74,
     metaTitle: "Description",
